@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.nav {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mentors {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.mentors-count {
+    width: 45px;
+    height: 48px;
+    background-color: #c9aa38;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.mentors-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    justify-content: center;
+}
+
+.m-card {
+    width: 30vh;
+    height: 45vh;
+    background: linear-gradient(to top left, #fed260, white);
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 0.8em;
+    margin: 5px;
+}
+.m-card-img{
+    height: 70%;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 5px;
+}
+.l-card-img{
+    height: 60%;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 5px;
+}
+.m-card .m-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.l-card .l-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.line {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    margin: 10px 0px;
+    border-radius: 1rem;
+}
+.card-content p{
+    color: #daaf3f;
+}
+.learners{
+    height: 45vh;
+    width: 10vh;
+    margin: 100px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.learners-heading{
+    transform: rotate(270deg);
+
+}
+.learners-section{
+    display: flex;
+    margin: 40px;
+}
+.learners-count{
+    background-color: white;
+    border: solid black;
+    border-width: 0.1rem;
+    width: 45px;
+    height: 48px;
+    border-radius: 40%;
+    color: #c9aa38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learners-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    justify-content: center;
+}
+
+.l-card {
+    width: 25vh;
+    height: 40vh;
+    background: white;
+    padding: 10px;
+    border: solid black;
+    border-radius: 0.8em;
+    margin: 5px;
+}
+
+.l-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .mentors-cards, .learners-cards {
+        gap: 1rem;
+    }
+
+    .m-card, .l-card {
+        width: calc(50% - 20px);
+        margin: 10px;
+    }
+
+    .learners-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .m-card, .l-card {
+        width: calc(100% - 20px);
+    }
+}
